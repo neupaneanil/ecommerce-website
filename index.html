@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Semester GPA & CGPA Calculator</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>8 Semester GPA & CGPA Calculator</h1>
+
+    <!-- Semester 1 -->
+    <div class="semester">
+        <h2>Semester 1</h2>
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+            <!-- Example of a semester input row -->
+            <tr><td><input type="text" id="sem1course1" placeholder="Course 1"></td><td><input type="number" id="sem1credits1" min="1"></td><td><select id="sem1grade1"><option value="">Select Grade</option><option value="4.0">A</option><option value="3.7">A-</option><option value="3.3">B+</option><option value="3.0">B</option><option value="2.7">B-</option><option value="2.3">C+</option><option value="2.0">C</option><option value="1.7">C-</option><option value="1.0">D</option><option value="0">F</option></select></td></tr>
+            <!-- Add more rows as needed -->
+        </table>
+        <button onclick="calculateGPA(1)">Calculate Semester GPA</button>
+        <h3 id="sem1GPA"></h3>
+    </div>
+
+    <!-- Repeat similar sections for each semester (2-8) -->
+
+</div>
+
+<!-- Link to the JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
